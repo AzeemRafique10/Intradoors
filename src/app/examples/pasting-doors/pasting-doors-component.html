@@ -1,0 +1,265 @@
+<div class="wrapper">
+  <div class="page-header page-header-small" filter-color="orange">
+    <div
+      class="page-header-image rellax-header"
+      data-rellax-speed="-8"
+      style="background-image: url('assets/img/header3.jpg')"
+    ></div>
+    <!-- <div class="container">
+            <div class="content-center">
+                <div class="photo-container">
+                    <img src="assets/img/ryan.jpg" alt="">
+                </div>
+                <h3 class="title">Ryan Scheinder</h3>
+                <p class="category">Photographer</p>
+                <div class="content">
+                    <div class="social-description">
+                        <h2>26</h2>
+                        <p>Comments</p>
+                    </div>
+                    <div class="social-description">
+                        <h2>26</h2>
+                        <p>Comments</p>
+                    </div>
+                    <div class="social-description">
+                        <h2>48</h2>
+                        <p>Bookmarks</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+  </div>
+  <div class="section">
+    <div class="container">
+      <!-- <div class="button-container">
+              <a href="#button" class="btn btn-primary btn-round btn-lg">Follow</a>
+              <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Follow me on Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#button" class="btn btn-default btn-round btn-lg btn-icon" rel="tooltip" title="Follow me on Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+          </div> -->
+      <h3 class="title">Pasting Door</h3>
+
+      <h5 class="description">
+        These doors prepared in Kayl Partal wood in frames as well as imported
+        Aysh Wood Sheet using high quality pasting technology. All size
+        available on order. Just contact<span style="font-weight: bold"
+          >(03)111-103-667</span
+        >
+        to confirm your order from all over the Pakistan. Intradoors is
+        producing high quality doors using the most innovative techniques using
+        modern technology in order to deliver the best product. Product Name:
+        Wood Pasting Door<br />
+        <span class="description-style">Product Code: P-001~P-100</span> <br />
+        <span class="description-style"
+          >Width 27", 30", 33", 36", 39", 42", 45’’, 48’’</span
+        >
+        <br />
+        <span class="description-style"> Height 84", 96’’, 108’’</span> <br />
+      </h5>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="title text-center">Pasting Doors Images</h4>
+          <!-- <ngb-tabset [justify]="'center'" type="pills" class="nav nav-pills nav-pills-primary  nav-pills-just-icons justify-content-center tab-space">
+                          <ngb-tab>
+                            <ng-template ngbTabTitle>
+                              <i class="now-ui-icons design_image"></i>
+                            </ng-template>
+                              <ng-template ngbTabContent>
+                                <div class="row">
+                                  <div class="col-md-10 ml-auto mr-auto">
+                                      <div class="row collections">
+                                          <div class="col-md-6">
+                                              <img src="assets/img/bg1.jpg" alt="" class="img-raised">
+                                              <img src="assets/img/bg3.jpg" alt="" class="img-raised">
+                                          </div>
+                                          <div class="col-md-6">
+                                              <img src="assets/img/bg8.jpg" alt="" class="img-raised">
+                                              <img src="assets/img/bg7.jpg" alt="" class="img-raised">
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </ng-template>
+                          </ngb-tab>
+                          <ngb-tab>
+                            <ng-template ngbTabTitle>
+                              <i class="now-ui-icons location_world"></i>
+                            </ng-template>
+                              <ng-template ngbTabContent>
+                                <div class="row">
+                                  <div class="col-md-10 ml-auto mr-auto">
+                                      <div class="row collections">
+                                          <div class="col-md-6">
+                                              <img src="assets/img/bg6.jpg" class="img-raised">
+                                              <img src="assets/img/bg11.jpg" alt="" class="img-raised">
+                                          </div>
+                                          <div class="col-md-6">
+                                              <img src="assets/img/bg7.jpg" alt="" class="img-raised">
+                                              <img src="assets/img/bg8.jpg" alt="" class="img-raised">
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </ng-template>
+                          </ngb-tab>
+                          <ngb-tab>
+                            <ng-template ngbTabTitle>
+                              <i class="now-ui-icons sport_user-run"></i>
+                            </ng-template>
+                              <ng-template ngbTabContent>
+                                <div class="row">
+                                  <div class="col-md-10 ml-auto mr-auto">
+                                      <div class="row collections">
+                                          <div class="col-md-6">
+                                              <img src="assets/img/bg3.jpg" alt="" class="img-raised">
+                                              <img src="assets/img/bg8.jpg" alt="" class="img-raised">
+                                              <img src="assets/img/bg8.jpg" alt="" class="img-raised">
+                                          </div>
+                                          <div class="col-md-6">
+                                              <img src="assets/img/bg7.jpg" alt="" class="img-raised">
+                                              <img src="assets/img/bg6.jpg" class="img-raised">
+                                          </div>
+                                      </div>
+                                  </div>
+                                </div>
+                              </ng-template>
+                          </ngb-tab>
+                      </ngb-tabset> -->
+
+          <div class="row justify-content-center">
+            <!-- <div class="col-md-12  d-flex justify-content-center" > -->
+            <!-- <div class="card-container"> -->
+
+            <div class="col-md-4 image-container" *ngFor="let img of images">
+              <div class="card">
+                <img [src]="img.url" alt="Image" />
+              </div>
+            </div>
+            <!-- </div> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="carousel" *ngIf="showImages">
+    <div class="container">
+      <h3 class="title">About Category</h3>
+      <h5 class="description">
+        An artist of considerable range, Ryan — the name taken by
+        Melbourne-raised, Brooklyn-based Nick Murphy — writes, performs and
+        records all of his own music, giving it a warm, intimate feel with a
+        solid groove structure. An artist of considerable range.
+      </h5>
+      <div class="row justify-content-center">
+        <div class="col-12 cro">
+          <!-- <ngb-carousel class="custom-carousel">
+                      <ng-template ngbSlide>
+                        <div class="picsum-img-wrapper">
+                            <img class="d-block carousel-image" src="assets/img/Double Ply Doors/img (1).jpg" alt="First slide">
+                        </div>
+                        
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nature, United States</h5>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img class="d-block" src="assets/img/Double Ply Doors/img (2).jpg" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Nature, United States</h5>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img class="d-block" src="assets/img/bg8.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Somewhere Beyond, United States</h5>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img class="d-block" src="assets/img/bg3.jpg" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Somewhere Beyond, United States</h5>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbSlide>
+                        <img class="d-block" src="assets/img/bg4.jpg" alt="Third slide">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Yellowstone National Park, United States</h5>
+                        </div>
+                      </ng-template>
+                  </ngb-carousel> -->
+
+          <ngb-carousel>
+            <!-- <ng-template ngbSlide>
+                      <div class="picsum-img-wrapper">
+                        <img src="assets/img/Double Ply Doors/img (1).jpg" alt="Angular Carousel 1">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Title Goes Here</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      </div>
+                    </ng-template>
+                    <ng-template ngbSlide>
+                      <div class="picsum-img-wrapper">
+                        <img src="assets/img/bg8.jpg" alt="Angular Carousel 2">
+                      </div>
+                      <div class="carousel-caption">
+                        <h3>Title Goes Here</h3>
+                        <p>Consectetur tortor volutpat pretium.</p>
+                      </div>
+                    </ng-template> -->
+            <ng-container *ngFor="let img of images">
+              <ng-template ngbSlide>
+                <div class="picsum-img-wrapper">
+                  <img [src]="img.url" alt="Angular Carousel 2" />
+                </div>
+                <!-- <div class="carousel-caption">
+                              <h3>Title Goes Here</h3>
+                              <p>Consectetur tortor volutpat pretium.</p>
+                            </div> -->
+              </ng-template>
+            </ng-container>
+          </ngb-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer footer-default">
+    <div class="container">
+      <nav>
+        <ul>
+          <li>
+            <a href="https://www.creative-tim.com"> Creative Farhan </a>
+          </li>
+          <li>
+            <a href="https://www.creative-tim.com/about-us"> About Us </a>
+          </li>
+          <li>
+            <a href="http://blog.creative-tim.com"> Blog </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/creativetimofficial/now-ui-kit/blob/master/LICENSE.md"
+            >
+              MIT License
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">
+        &copy; {{data | date: 'yyyy'}}, Designed by
+        <a href="https://www.invisionapp.com" target="_blank">Marksman</a>.
+        Coded by
+        <a href="https://www.creative-tim.com" target="_blank"
+          >Creative Farhan</a
+        >.
+      </div>
+    </div>
+  </footer>
+</div>
